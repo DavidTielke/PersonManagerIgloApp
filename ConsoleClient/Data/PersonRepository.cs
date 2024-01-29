@@ -1,4 +1,4 @@
-﻿using ConsoleClient.Models;
+﻿using ConsoleClient.CrossCutting;
 
 namespace ConsoleClient.Data
 {
@@ -25,11 +25,5 @@ namespace ConsoleClient.Data
             var persons = _parser.ParseFromCsv(lines);
             return persons;
         }
-    }
-
-    public interface IPersonRepository
-    {
-        void Insert(Person person);
-        IEnumerable<Person> Query();
     }
 }

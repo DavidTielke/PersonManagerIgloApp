@@ -1,4 +1,4 @@
-﻿namespace ConsoleClient.Models
+﻿namespace ConsoleClient.CrossCutting
 {
     public class Person
     {
@@ -8,7 +8,7 @@
 
         public Person()
         {
-            
+
         }
 
         public Person(int id, string name, int age)
