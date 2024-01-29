@@ -5,4 +5,5 @@ namespace ConsoleClient.Data;
 public interface IPersonParser
 {
     IEnumerable<Person> ParseFromCsv(string[] lines);
+    string ParseToCsv(Person person);
 }

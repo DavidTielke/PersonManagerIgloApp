@@ -22,5 +22,8 @@ class App
         var children = _manager.GetAllChildren().ToList();
         Console.WriteLine($"### KINDER ({children.Count}) ###");
         children.ForEach(c => Console.WriteLine(c.Name));
+
+        var person = new Person(0, "Susanne", 60);
+        _manager.Add(person);
     }
 }

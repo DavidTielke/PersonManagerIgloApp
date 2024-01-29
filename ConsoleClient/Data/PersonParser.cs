@@ -22,5 +22,10 @@ namespace ConsoleClient.Data
                     Age = int.Parse(p[2]),
                 });
         }
+
+        public string ParseToCsv(Person person)
+        {
+            return $"{person.Id},{person.Name},{person.Age}";
+        }
     }
 }

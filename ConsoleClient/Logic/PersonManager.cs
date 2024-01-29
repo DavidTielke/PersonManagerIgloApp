@@ -1,5 +1,6 @@
 ﻿using ConsoleClient.CrossCutting;
 using ConsoleClient.Data;
+using ConsoleClient.UI;
 
 namespace ConsoleClient.Logic
 {
@@ -11,7 +12,7 @@ namespace ConsoleClient.Logic
         public PersonManager(IPersonRepository repository, IConfigurator config)
         {
             _repository = repository;
-            AGE_TRESHOLD = config.Get<int>("AgeTreshold");
+            AGE_TRESHOLD = config.Get<int>(PersonConfigKeys.AgeTreshold);
         }
 
         public IEnumerable<Person> GetAllAdults()
@@ -30,6 +31,7 @@ namespace ConsoleClient.Logic
 
         public void Add(Person person)
         {
+            // ...
             _repository.Insert(person);
         }
     }
