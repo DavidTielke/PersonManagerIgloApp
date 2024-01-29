@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using ConsoleClient.Data;
+using ConsoleClient.Logic;
 using Ninject;
-using ServiceClient.Data;
-using ServiceClient.Logic;
 
 namespace ConsoleClient
 {

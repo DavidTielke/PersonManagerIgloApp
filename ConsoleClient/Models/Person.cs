@@ -1,4 +1,4 @@
-﻿namespace ServiceClient.Models
+﻿namespace ConsoleClient.Models
 {
     public class Person
     {

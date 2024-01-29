@@ -1,6 +1,6 @@
-﻿using ServiceClient.Models;
+﻿using ConsoleClient.Models;
 
-namespace ServiceClient.Logic;
+namespace ConsoleClient.Logic;
 
 public interface IPersonManager
 {

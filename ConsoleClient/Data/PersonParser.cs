@@ -1,6 +1,6 @@
-﻿using ServiceClient.Models;
+﻿using ConsoleClient.Models;
 
-namespace ServiceClient.Data
+namespace ConsoleClient.Data
 {
     // 1. EC
     // 2. TC

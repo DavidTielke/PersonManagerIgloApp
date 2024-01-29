@@ -1,7 +1,7 @@
-﻿using ServiceClient.Data;
-using ServiceClient.Models;
+﻿using ConsoleClient.Data;
+using ConsoleClient.Models;
 
-namespace ServiceClient.Logic
+namespace ConsoleClient.Logic
 {
     public class PersonManager : IPersonManager
     {

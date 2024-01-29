@@ -1,4 +1,4 @@
-﻿namespace ServiceClient.Data;
+﻿namespace ConsoleClient.Data;
 
 public interface IFileReader
 {
