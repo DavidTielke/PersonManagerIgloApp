@@ -43,6 +43,7 @@ namespace ConsoleClient.UI
             kernel.Bind<IPersonManager>().To<PersonManager>();
             kernel.Bind<ILogger>().To<Logger>();
             kernel.Bind<IPersonLogicValidator>().To<PersonLogicValidator>();
+            kernel.Bind<IPersonDataValidator>().To<PersonDataValidator>();
             kernel.Bind<IConfigurator>().To<Configurator>().InSingletonScope();
             kernel.Bind<IFoo>().To<Foo>().InSingletonScope();
 
