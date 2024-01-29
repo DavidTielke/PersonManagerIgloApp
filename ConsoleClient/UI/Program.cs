@@ -42,6 +42,7 @@ namespace ConsoleClient.UI
             kernel.Bind<IPersonRepository>().To<PersonRepository>();
             kernel.Bind<IPersonManager>().To<PersonManager>();
             kernel.Bind<ILogger>().To<Logger>();
+            kernel.Bind<IPersonLogicValidator>().To<PersonLogicValidator>();
             kernel.Bind<IConfigurator>().To<Configurator>().InSingletonScope();
             kernel.Bind<IFoo>().To<Foo>().InSingletonScope();
 
