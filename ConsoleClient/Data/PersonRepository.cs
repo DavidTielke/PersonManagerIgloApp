@@ -26,6 +26,9 @@ namespace ConsoleClient.Data
             }
 
             var lines = _store.ReadAllLines().ToList();
+            var persons = _parser.ParseFromCsv(lines.ToArray());
+            var nextId = persons.Max(p => p.Id) + 1;
+            person.Id = nextId;
             var dataLine = _parser.ParseToCsv(person);
             lines.Add(dataLine);
             _store.WriteAllLines(lines);

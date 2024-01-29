@@ -19,7 +19,7 @@ public class PersonManagerTests
         _repoMock = new Mock<IPersonRepository>();
         _configMock = new Mock<IConfigurator>();
         _validatorMock = new Mock<IPersonLogicValidator>();
-        _sut = new PersonManager(_repoMock.Object, _configMock.Object, _validatorMock.Object)
+        _sut = new PersonManager(_repoMock.Object, _configMock.Object, _validatorMock.Object);
     }
 
     [TestMethod]
