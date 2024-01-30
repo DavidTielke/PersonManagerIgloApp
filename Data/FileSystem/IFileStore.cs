@@ -1,4 +1,4 @@
-﻿namespace ConsoleClient.Data;
+﻿namespace Data.FileSystem;
 
 public interface IFileStore
 {

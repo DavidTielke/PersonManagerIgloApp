@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using ConsoleClient.CrossCutting;
+using CrossCutting.DomainModel;
 
 namespace ConsoleClient.Logic
 {

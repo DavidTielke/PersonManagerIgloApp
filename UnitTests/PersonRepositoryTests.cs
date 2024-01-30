@@ -1,5 +1,7 @@
 using ConsoleClient.CrossCutting;
-using ConsoleClient.Data;
+using CrossCutting.Configuration;
+using Data.DataAccess;
+using Data.FileSystem;
 using FluentAssertions;
 using Moq;
 

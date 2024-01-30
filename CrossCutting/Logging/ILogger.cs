@@ -1,4 +1,4 @@
-﻿namespace ConsoleClient.CrossCutting;
+﻿namespace CrossCutting.Logging;
 
 public interface ILogger
 {

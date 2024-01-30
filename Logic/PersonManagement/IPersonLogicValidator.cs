@@ -1,4 +1,4 @@
-﻿using ConsoleClient.CrossCutting;
+﻿using CrossCutting.DomainModel;
 
 namespace ConsoleClient.Logic;
 

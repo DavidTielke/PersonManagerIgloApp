@@ -1,4 +1,4 @@
-﻿namespace ConsoleClient.CrossCutting;
+﻿namespace CrossCutting.Configuration;
 
 public class Configurator : IConfigurator
 {

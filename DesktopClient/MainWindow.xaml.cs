@@ -9,9 +9,12 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using ConsoleClient.CrossCutting;
-using ConsoleClient.Data;
 using ConsoleClient.Logic;
+using CrossCutting.Configuration;
+using CrossCutting.DomainModel;
+using CrossCutting.Logging;
+using Data.DataAccess;
+using Data.FileSystem;
 using Ninject;
 
 namespace DesktopClient

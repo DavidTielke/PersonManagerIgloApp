@@ -4,3 +4,11 @@ GET {{ServiceClient_HostAddress}}/person/
 Accept: application/json
 
 ###
+GET {{ServiceClient_HostAddress}}/person/adults
+Accept: application/json
+
+###
+GET {{ServiceClient_HostAddress}}/person/children
+Accept: application/json
+
+###

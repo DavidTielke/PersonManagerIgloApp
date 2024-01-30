@@ -1,7 +1,7 @@
-
-using ConsoleClient.CrossCutting;
-using ConsoleClient.Data;
 using ConsoleClient.Logic;
+using CrossCutting.Configuration;
+using Data.DataAccess;
+using Data.FileSystem;
 
 namespace ServiceClient
 {

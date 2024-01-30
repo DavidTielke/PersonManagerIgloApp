@@ -4,9 +4,9 @@ using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
-using ConsoleClient.CrossCutting;
+using CrossCutting.DomainModel;
 
-namespace ConsoleClient.Data
+namespace Data.DataAccess
 {
     public class PersonDataValidator : IPersonDataValidator
     {

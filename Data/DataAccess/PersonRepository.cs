@@ -1,6 +1,8 @@
-﻿using ConsoleClient.CrossCutting;
+﻿using CrossCutting.Configuration;
+using CrossCutting.DomainModel;
+using Data.FileSystem;
 
-namespace ConsoleClient.Data
+namespace Data.DataAccess
 {
     public class PersonRepository : IPersonRepository
     {
@@ -9,7 +11,7 @@ namespace ConsoleClient.Data
         private readonly IPersonDataValidator _validator;
         private readonly IConfigurator _config;
 
-        public PersonRepository(IFileStore store, 
+        public PersonRepository(IFileStore store,
             IPersonParser parser,
             IPersonDataValidator validator,
             IConfigurator config)

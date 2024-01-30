@@ -1,5 +1,5 @@
-using ConsoleClient.CrossCutting;
 using ConsoleClient.Logic;
+using CrossCutting.DomainModel;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ServiceClient.Controllers

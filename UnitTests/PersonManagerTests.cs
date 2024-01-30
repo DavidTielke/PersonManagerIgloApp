@@ -1,7 +1,8 @@
 using System.Windows.Markup;
-using ConsoleClient.CrossCutting;
-using ConsoleClient.Data;
 using ConsoleClient.Logic;
+using CrossCutting.Configuration;
+using CrossCutting.DomainModel;
+using Data.DataAccess;
 using FluentAssertions;
 using Moq;
 

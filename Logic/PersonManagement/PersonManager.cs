@@ -1,5 +1,6 @@
-﻿using ConsoleClient.CrossCutting;
-using ConsoleClient.Data;
+﻿using CrossCutting.Configuration;
+using CrossCutting.DomainModel;
+using Data.DataAccess;
 
 namespace ConsoleClient.Logic
 {

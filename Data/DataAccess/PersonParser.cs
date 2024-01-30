@@ -1,6 +1,6 @@
-﻿using ConsoleClient.CrossCutting;
+﻿using CrossCutting.DomainModel;
 
-namespace ConsoleClient.Data
+namespace Data.DataAccess
 {
     public class PersonParser : IPersonParser
     {

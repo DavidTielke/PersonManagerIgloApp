@@ -1,6 +1,4 @@
-﻿using ConsoleClient.CrossCutting;
-
-namespace ConsoleClient.Data
+﻿namespace Data.FileSystem
 {
     public class FileStore : IFileStore
     {
