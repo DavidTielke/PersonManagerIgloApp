@@ -4,7 +4,6 @@ using CrossCutting.Configuration;
 using CrossCutting.Contract.Configuration;
 using CrossCutting.DomainModel;
 using Data.Contract.DataAccess;
-using Data.DataAccess;
 using FluentAssertions;
 using Logic.Contract.PersonManagement;
 using Moq;
