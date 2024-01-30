@@ -1,6 +1,8 @@
+using System.Windows.Markup;
 using ConsoleClient.CrossCutting;
 using ConsoleClient.Data;
 using ConsoleClient.Logic;
+using FluentAssertions;
 using Moq;
 
 namespace UnitTests;
@@ -23,7 +25,7 @@ public class PersonManagerTests
     }
 
     [TestMethod]
-    public void GetAllAdults_2AdultsInRepo_2AdultsReturned()
+    public void GetAllAdults_2AdultsInRepo_2AdultsReturned(int b)
     {
         _repoMock.Setup(m => m.Query()).Returns(new List<Person>
         {
@@ -37,6 +39,14 @@ public class PersonManagerTests
 
         var actual = _sut.GetAllAdults().Count();
 
-        Assert.AreEqual(expected, actual);
+        actual.Should().Be(expected, "two adults are returned by the repository");
+    }
+
+    [TestMethod]
+    public void Add_PersonIsNull_ArgumentNullException()
+    {
+        _sut.Invoking(sut => sut.Add(null))
+            .Should()
+            .Throw<ArgumentNullException>();
     }
 }

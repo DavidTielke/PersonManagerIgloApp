@@ -19,6 +19,8 @@ namespace ConsoleClient.Data
 
         public void Insert(Person person)
         {
+            ArgumentNullException.ThrowIfNull(person);
+
             var isValidForInsert = _validator.IsValidForInsert(person);
             if (!isValidForInsert)
             {

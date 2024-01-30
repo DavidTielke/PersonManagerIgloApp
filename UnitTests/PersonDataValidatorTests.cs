@@ -1,5 +1,6 @@
 using ConsoleClient.CrossCutting;
 using ConsoleClient.Data;
+using FluentAssertions;
 
 namespace UnitTests;
 
@@ -14,7 +15,7 @@ public class PersonDataValidatorTests
 
         var actual = validator.IsValidForInsert(person);
 
-        Assert.IsTrue(actual);
+        actual.Should().BeTrue();
     }
 
     [TestMethod]
@@ -25,7 +26,7 @@ public class PersonDataValidatorTests
 
         var actual = validator.IsValidForInsert(person);
 
-        Assert.IsFalse(actual);
+        actual.Should().BeFalse();
     }
     
     [TestMethod]
@@ -36,6 +37,6 @@ public class PersonDataValidatorTests
 
         var actual = validator.IsValidForInsert(person);
 
-        Assert.IsFalse(actual);
+        actual.Should().BeFalse();
     }
 }

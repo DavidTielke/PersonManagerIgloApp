@@ -1,5 +1,6 @@
 using ConsoleClient.CrossCutting;
 using ConsoleClient.Data;
+using FluentAssertions;
 using Moq;
 
 namespace UnitTests
@@ -31,8 +32,41 @@ namespace UnitTests
 
             _sut.Insert(person);
 
-            Assert.AreEqual(2, lines.Count());
-            Assert.AreEqual("0,Test,23", lines.Last());
+            lines.Count().Should().Be(2);
+            lines.Last().Should().Be("2,Test,23");
+        }
+
+        [TestMethod]
+        public void Insert_NewPerson_AddedPersonGetNextId()
+        {
+            IEnumerable<string> lines = null;
+            var person = new Person(0, "Test", 23);
+            _storeMock.Setup(m => m.ReadAllLines()).Returns(new[] { "1,Test2,17" });
+            _storeMock
+                .Setup(m => m.WriteAllLines(It.IsAny<IEnumerable<string>>()))
+                .Callback((Action<IEnumerable<string>>)(l => lines = l));
+
+            _sut.Insert(person);
+
+            lines.Last().Should().Be("2,Test,23");
+        }
+
+        [TestMethod]
+        public void Insert_PersonIsNull_ArgumentNullException()
+        {
+            _sut.Invoking(sut => sut.Insert(null))
+                .Should()
+                .Throw<ArgumentNullException>();
+        }
+
+        [TestMethod]
+        public void Insert_PersonWithId1_ArgumentException()
+        {
+            var person = new Person(1, "Test", 23);
+
+            _sut.Invoking(sut => sut.Insert(person))
+                .Should()
+                .Throw<ArgumentException>();
         }
     }
 }
