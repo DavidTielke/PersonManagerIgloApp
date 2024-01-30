@@ -1,11 +1,9 @@
-﻿using CrossCutting.Configuration;
-using CrossCutting.Contract.Configuration;
-using CrossCutting.DomainModel;
-using Data.Contract.DataAccess;
-using Data.Contract.FileSystem;
-using Data.FileSystem;
+﻿using DavidTielke.PMA.CrossCutting.Contract.Configuration;
+using DavidTielke.PMA.CrossCutting.Contract.DomainModel;
+using DavidTielke.PMA.Data.Contract.DataAccess;
+using DavidTielke.PMA.Data.Contract.FileSystem;
 
-namespace Data.DataAccess
+namespace DavidTielke.PMA.Data.DataAccess
 {
     public class PersonRepository : IPersonRepository
     {

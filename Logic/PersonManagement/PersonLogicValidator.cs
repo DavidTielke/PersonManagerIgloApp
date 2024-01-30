@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using CrossCutting.DomainModel;
-using Logic.Contract.PersonManagement;
+﻿using DavidTielke.PMA.CrossCutting.Contract.DomainModel;
+using DavidTielke.PMA.Logic.Contract.PersonManagement;
 
-namespace ConsoleClient.Logic
+namespace DavidTielke.PMA.Logic.PersonManagement
 {
     public class PersonLogicValidator : IPersonLogicValidator
     {

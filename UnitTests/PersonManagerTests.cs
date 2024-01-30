@@ -1,14 +1,12 @@
-using System.Windows.Markup;
-using ConsoleClient.Logic;
-using CrossCutting.Configuration;
-using CrossCutting.Contract.Configuration;
-using CrossCutting.DomainModel;
-using Data.Contract.DataAccess;
+using DavidTielke.PMA.CrossCutting.Contract.Configuration;
+using DavidTielke.PMA.CrossCutting.Contract.DomainModel;
+using DavidTielke.PMA.Data.Contract.DataAccess;
+using DavidTielke.PMA.Logic.Contract.PersonManagement;
+using DavidTielke.PMA.Logic.PersonManagement;
 using FluentAssertions;
-using Logic.Contract.PersonManagement;
 using Moq;
 
-namespace UnitTests;
+namespace DavidTielke.PMA.UI.UnitTests;
 
 [TestClass]
 public class PersonManagerTests

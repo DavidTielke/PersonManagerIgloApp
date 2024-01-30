@@ -1,13 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.CompilerServices;
-using System.Text;
-using System.Threading.Tasks;
-using CrossCutting.DomainModel;
-using Data.Contract.DataAccess;
+﻿using DavidTielke.PMA.CrossCutting.Contract.DomainModel;
+using DavidTielke.PMA.Data.Contract.DataAccess;
 
-namespace Data.DataAccess
+namespace DavidTielke.PMA.Data.DataAccess
 {
     public class PersonDataValidator : IPersonDataValidator
     {

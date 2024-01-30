@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace CrossCutting.Contract.Configuration
+﻿namespace DavidTielke.PMA.CrossCutting.Contract.Configuration
 {
     public interface IConfigurator
     {

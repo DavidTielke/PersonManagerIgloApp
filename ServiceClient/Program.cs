@@ -1,13 +1,7 @@
-using ConsoleClient.Logic;
-using CrossCutting.Configuration;
-using CrossCutting.Contract.Configuration;
-using Data.Contract.DataAccess;
-using Data.Contract.FileSystem;
-using Data.DataAccess;
-using Data.FileSystem;
-using Logic.Contract.PersonManagement;
+using DavidTielke.PMA.CrossCutting.Contract.Configuration;
+using DavidTielke.PMA.Mappings;
 
-namespace ServiceClient
+namespace DavidTielke.PMA.UI.ServiceClient
 {
     public class Program
     {
@@ -22,13 +16,7 @@ namespace ServiceClient
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
 
-            builder.Services.AddTransient<IFileStore, FileStore>();
-            builder.Services.AddTransient<IPersonParser, PersonParser>();
-            builder.Services.AddTransient<IPersonRepository, PersonRepository>();
-            builder.Services.AddTransient<IPersonManager, PersonManager>();
-            builder.Services.AddTransient<IPersonLogicValidator, PersonLogicValidator>();
-            builder.Services.AddTransient<IPersonDataValidator, PersonDataValidator>();
-            builder.Services.AddSingleton<IConfigurator, Configurator>();
+            builder.Services.AddApplicationServices();
 
             var app = builder.Build();
 

@@ -1,4 +1,4 @@
-﻿namespace CrossCutting.DomainModel
+﻿namespace DavidTielke.PMA.CrossCutting.Contract.DomainModel
 {
     public class Person
     {

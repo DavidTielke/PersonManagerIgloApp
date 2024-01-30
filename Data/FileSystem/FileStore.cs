@@ -1,6 +1,6 @@
-﻿using Data.Contract.FileSystem;
+﻿using DavidTielke.PMA.Data.Contract.FileSystem;
 
-namespace Data.FileSystem
+namespace DavidTielke.PMA.Data.FileSystem
 {
     public class FileStore : IFileStore
     {

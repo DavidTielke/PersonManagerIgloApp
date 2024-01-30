@@ -1,9 +1,8 @@
-using ConsoleClient.Logic;
-using CrossCutting.DomainModel;
-using Logic.Contract.PersonManagement;
+using DavidTielke.PMA.CrossCutting.Contract.DomainModel;
+using DavidTielke.PMA.Logic.Contract.PersonManagement;
 using Microsoft.AspNetCore.Mvc;
 
-namespace ServiceClient.Controllers
+namespace DavidTielke.PMA.UI.ServiceClient.Controllers
 {
     [ApiController]
     [Route("[controller]")]

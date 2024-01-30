@@ -1,10 +1,9 @@
-﻿using CrossCutting.Configuration;
-using CrossCutting.Contract.Configuration;
-using CrossCutting.DomainModel;
-using Data.Contract.DataAccess;
-using Logic.Contract.PersonManagement;
+﻿using DavidTielke.PMA.CrossCutting.Contract.Configuration;
+using DavidTielke.PMA.CrossCutting.Contract.DomainModel;
+using DavidTielke.PMA.Data.Contract.DataAccess;
+using DavidTielke.PMA.Logic.Contract.PersonManagement;
 
-namespace ConsoleClient.Logic
+namespace DavidTielke.PMA.Logic.PersonManagement
 {
     public class PersonManager : IPersonManager
     {
@@ -13,7 +12,7 @@ namespace ConsoleClient.Logic
         private readonly IConfigurator _config;
         private readonly IPersonLogicValidator _validator;
 
-        public PersonManager(IPersonRepository repository, 
+        public PersonManager(IPersonRepository repository,
             IConfigurator config,
             IPersonLogicValidator validator)
         {
@@ -48,7 +47,7 @@ namespace ConsoleClient.Logic
             {
                 throw new ArgumentException(nameof(person));
             }
-            
+
             // ...
 
             _repository.Insert(person);

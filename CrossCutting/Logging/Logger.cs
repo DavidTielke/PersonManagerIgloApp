@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using CrossCutting.Contract.Logging;
+﻿using DavidTielke.PMA.CrossCutting.Contract.Logging;
 
-namespace CrossCutting.Logging
+namespace DavidTielke.PMA.CrossCutting.Logging
 {
     public class Logger : ILogger
     {

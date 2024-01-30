@@ -1,7 +1,7 @@
-﻿using CrossCutting.DomainModel;
-using Data.Contract.DataAccess;
+﻿using DavidTielke.PMA.CrossCutting.Contract.DomainModel;
+using DavidTielke.PMA.Data.Contract.DataAccess;
 
-namespace Data.DataAccess
+namespace DavidTielke.PMA.Data.DataAccess
 {
     public class PersonParser : IPersonParser
     {

@@ -5,6 +5,7 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <InvariantGlobalization>true</InvariantGlobalization>
+	  <RootNamespace>DavidTielke.PMA.UI.ServiceClient</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
@@ -12,10 +13,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Data.Contract\Data.Contract.csproj" />
-    <ProjectReference Include="..\Data\Data.csproj" />
     <ProjectReference Include="..\Logic.Contract\Logic.Contract.csproj" />
-    <ProjectReference Include="..\Logic\Logic.csproj" />
+    <ProjectReference Include="..\Mappings\Mappings.csproj" />
   </ItemGroup>
 
   <ItemGroup>

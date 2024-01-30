@@ -1,6 +1,6 @@
-﻿using CrossCutting.Contract.Configuration;
+﻿using DavidTielke.PMA.CrossCutting.Contract.Configuration;
 
-namespace CrossCutting.Configuration;
+namespace DavidTielke.PMA.CrossCutting.Configuration;
 
 public class Configurator : IConfigurator
 {

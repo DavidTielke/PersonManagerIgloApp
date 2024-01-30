@@ -1,12 +1,11 @@
-using CrossCutting.Configuration;
-using CrossCutting.Contract.Configuration;
-using CrossCutting.DomainModel;
-using Data.Contract.FileSystem;
-using Data.DataAccess;
+using DavidTielke.PMA.CrossCutting.Contract.Configuration;
+using DavidTielke.PMA.CrossCutting.Contract.DomainModel;
+using DavidTielke.PMA.Data.Contract.FileSystem;
+using DavidTielke.PMA.Data.DataAccess;
 using FluentAssertions;
 using Moq;
 
-namespace UnitTests
+namespace DavidTielke.PMA.UI.UnitTests
 {
     [TestClass]
     public class PersonRepositoryTests
@@ -33,7 +32,7 @@ namespace UnitTests
             _storeMock.Setup(m => m.ReadAllLines(It.IsAny<string>())).Returns(new[] { "1,Test2,17" });
             _storeMock
                 .Setup(m => m.WriteAllLines(It.IsAny<string>(), It.IsAny<IEnumerable<string>>()))
-                .Callback((Action<string, IEnumerable<string>>)((_,l) => lines = l));
+                .Callback((Action<string, IEnumerable<string>>)((_, l) => lines = l));
 
             _sut.Insert(person);
 
@@ -49,7 +48,7 @@ namespace UnitTests
             _storeMock.Setup(m => m.ReadAllLines(It.IsAny<string>())).Returns(new[] { "1,Test2,17" });
             _storeMock
                 .Setup(m => m.WriteAllLines(It.IsAny<string>(), It.IsAny<IEnumerable<string>>()))
-                .Callback((Action<string, IEnumerable<string>>)((_,l) => lines = l));
+                .Callback((Action<string, IEnumerable<string>>)((_, l) => lines = l));
 
             _sut.Insert(person);
 

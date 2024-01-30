@@ -1,6 +1,6 @@
-﻿using CrossCutting.DomainModel;
+﻿using DavidTielke.PMA.CrossCutting.Contract.DomainModel;
 
-namespace Logic.Contract.PersonManagement;
+namespace DavidTielke.PMA.Logic.Contract.PersonManagement;
 
 public interface IPersonLogicValidator
 {

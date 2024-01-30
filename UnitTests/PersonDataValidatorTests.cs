@@ -1,8 +1,8 @@
-using CrossCutting.DomainModel;
-using Data.DataAccess;
+using DavidTielke.PMA.CrossCutting.Contract.DomainModel;
+using DavidTielke.PMA.Data.DataAccess;
 using FluentAssertions;
 
-namespace UnitTests;
+namespace DavidTielke.PMA.UI.UnitTests;
 
 [TestClass]
 public class PersonDataValidatorTests
@@ -28,7 +28,7 @@ public class PersonDataValidatorTests
 
         actual.Should().BeFalse();
     }
-    
+
     [TestMethod]
     public void IsValidForInsert_PersonWithNameNull_ReturnsFalse()
     {

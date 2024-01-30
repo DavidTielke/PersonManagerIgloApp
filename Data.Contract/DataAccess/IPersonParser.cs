@@ -1,6 +1,6 @@
-﻿using CrossCutting.DomainModel;
+﻿using DavidTielke.PMA.CrossCutting.Contract.DomainModel;
 
-namespace Data.Contract.DataAccess;
+namespace DavidTielke.PMA.Data.Contract.DataAccess;
 
 public interface IPersonParser
 {

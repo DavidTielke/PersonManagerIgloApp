@@ -1,4 +1,4 @@
-﻿namespace CrossCutting.Contract.Logging;
+﻿namespace DavidTielke.PMA.CrossCutting.Contract.Logging;
 
 public interface ILogger
 {

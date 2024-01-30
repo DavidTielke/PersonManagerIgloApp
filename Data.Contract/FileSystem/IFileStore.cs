@@ -1,4 +1,4 @@
-﻿namespace Data.Contract.FileSystem;
+﻿namespace DavidTielke.PMA.Data.Contract.FileSystem;
 
 public interface IFileStore
 {
