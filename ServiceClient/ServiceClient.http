@@ -1,0 +1,6 @@
+@ServiceClient_HostAddress = http://localhost:5198
+
+GET {{ServiceClient_HostAddress}}/person/
+Accept: application/json
+
+###

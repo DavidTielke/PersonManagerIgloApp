@@ -25,7 +25,7 @@ public class PersonManagerTests
     }
 
     [TestMethod]
-    public void GetAllAdults_2AdultsInRepo_2AdultsReturned(int b)
+    public void GetAllAdults_2AdultsInRepo_2AdultsReturned()
     {
         _repoMock.Setup(m => m.Query()).Returns(new List<Person>
         {

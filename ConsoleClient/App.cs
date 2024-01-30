@@ -1,7 +1,7 @@
 ﻿using ConsoleClient.CrossCutting;
 using ConsoleClient.Logic;
 
-namespace ConsoleClient.UI;
+namespace ConsoleClient;
 
 class App
 {

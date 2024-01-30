@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleClient.CrossCutting
 {
-    internal class Logger : ILogger
+    public class Logger : ILogger
     {
         public void Log(string message)
         {

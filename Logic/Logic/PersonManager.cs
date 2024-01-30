@@ -1,6 +1,5 @@
 ﻿using ConsoleClient.CrossCutting;
 using ConsoleClient.Data;
-using ConsoleClient.UI;
 
 namespace ConsoleClient.Logic
 {

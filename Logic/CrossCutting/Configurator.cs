@@ -1,6 +1,6 @@
 ﻿namespace ConsoleClient.CrossCutting;
 
-class Configurator : IConfigurator
+public class Configurator : IConfigurator
 {
     private readonly Dictionary<string, object> _items;
 

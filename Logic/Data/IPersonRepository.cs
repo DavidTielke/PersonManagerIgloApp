@@ -4,6 +4,6 @@ namespace ConsoleClient.Data;
 
 public interface IPersonRepository
 {
-    void Insert(Person person);
+    void Insert(Person personToAdd);
     IEnumerable<Person> Query();
 }

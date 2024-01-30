@@ -4,7 +4,7 @@ using ConsoleClient.Data;
 using ConsoleClient.Logic;
 using Ninject;
 
-namespace ConsoleClient.UI
+namespace ConsoleClient
 {
     internal interface IFoo
     {
@@ -49,6 +49,7 @@ namespace ConsoleClient.UI
 
             var config = kernel.Get<IConfigurator>();
             config.Set(PersonConfigKeys.AgeTreshold, 10);
+            config.Set("CsvPath", "data.csv");
 
             var app = kernel.Get<App>();
             app.Run();

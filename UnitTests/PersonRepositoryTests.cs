@@ -10,6 +10,7 @@ namespace UnitTests
     {
         private PersonRepository _sut;
         private Mock<IFileStore> _storeMock;
+        private Mock<IConfigurator> _configMock;
 
         [TestInitialize]
         public void Init()
@@ -17,7 +18,8 @@ namespace UnitTests
             var validator = new PersonDataValidator();
             var parser = new PersonParser();
             _storeMock = new Mock<IFileStore>();
-            _sut = new PersonRepository(_storeMock.Object, parser, validator);
+            _configMock = new Mock<IConfigurator>();
+            _sut = new PersonRepository(_storeMock.Object, parser, validator, _configMock.Object);
         }
 
         [TestMethod]
@@ -25,10 +27,10 @@ namespace UnitTests
         {
             IEnumerable<string> lines = null;
             var person = new Person(0, "Test", 23);
-            _storeMock.Setup(m => m.ReadAllLines()).Returns(new[] { "1,Test2,17" });
+            _storeMock.Setup(m => m.ReadAllLines(It.IsAny<string>())).Returns(new[] { "1,Test2,17" });
             _storeMock
-                .Setup(m => m.WriteAllLines(It.IsAny<IEnumerable<string>>()))
-                .Callback((Action<IEnumerable<string>>)(l => lines = l));
+                .Setup(m => m.WriteAllLines(It.IsAny<string>(), It.IsAny<IEnumerable<string>>()))
+                .Callback((Action<string, IEnumerable<string>>)((_,l) => lines = l));
 
             _sut.Insert(person);
 
@@ -41,10 +43,10 @@ namespace UnitTests
         {
             IEnumerable<string> lines = null;
             var person = new Person(0, "Test", 23);
-            _storeMock.Setup(m => m.ReadAllLines()).Returns(new[] { "1,Test2,17" });
+            _storeMock.Setup(m => m.ReadAllLines(It.IsAny<string>())).Returns(new[] { "1,Test2,17" });
             _storeMock
-                .Setup(m => m.WriteAllLines(It.IsAny<IEnumerable<string>>()))
-                .Callback((Action<IEnumerable<string>>)(l => lines = l));
+                .Setup(m => m.WriteAllLines(It.IsAny<string>(), It.IsAny<IEnumerable<string>>()))
+                .Callback((Action<string, IEnumerable<string>>)((_,l) => lines = l));
 
             _sut.Insert(person);
 
