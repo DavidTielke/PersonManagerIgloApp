@@ -1,5 +1,7 @@
-using ConsoleClient.CrossCutting;
 using CrossCutting.Configuration;
+using CrossCutting.Contract.Configuration;
+using CrossCutting.DomainModel;
+using Data.Contract.FileSystem;
 using Data.DataAccess;
 using Data.FileSystem;
 using FluentAssertions;

@@ -1,4 +1,6 @@
-﻿namespace CrossCutting.Configuration;
+﻿using CrossCutting.Contract.Configuration;
+
+namespace CrossCutting.Configuration;
 
 public class Configurator : IConfigurator
 {

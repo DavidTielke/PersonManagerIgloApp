@@ -1,9 +1,14 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using ConsoleClient.Logic;
 using CrossCutting.Configuration;
+using CrossCutting.Contract.Configuration;
+using CrossCutting.Contract.Logging;
 using CrossCutting.Logging;
+using Data.Contract.DataAccess;
+using Data.Contract.FileSystem;
 using Data.DataAccess;
 using Data.FileSystem;
+using Logic.Contract.PersonManagement;
 using Ninject;
 
 namespace ConsoleClient

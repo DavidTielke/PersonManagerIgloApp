@@ -1,5 +1,6 @@
-﻿using ConsoleClient.CrossCutting;
-using ConsoleClient.Logic;
+﻿using ConsoleClient.Logic;
+using CrossCutting.DomainModel;
+using Logic.Contract.PersonManagement;
 
 namespace ConsoleClient;
 

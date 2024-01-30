@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Configuration\DataClasses\" />
+    <Folder Include="Configuration\Exceptions\" />
+    <Folder Include="Configuration\Callbacks\" />
+    <Folder Include="Logging\Callbacks\" />
+    <Folder Include="Logging\DataClasses\" />
+    <Folder Include="Logging\Exceptions\" />
+  </ItemGroup>
+
+</Project>

@@ -1,4 +1,5 @@
 ﻿using CrossCutting.DomainModel;
+using Data.Contract.DataAccess;
 
 namespace Data.DataAccess
 {

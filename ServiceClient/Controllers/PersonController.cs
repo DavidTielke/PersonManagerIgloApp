@@ -1,5 +1,6 @@
 using ConsoleClient.Logic;
 using CrossCutting.DomainModel;
+using Logic.Contract.PersonManagement;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ServiceClient.Controllers

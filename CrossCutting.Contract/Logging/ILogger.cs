@@ -1,4 +1,4 @@
-﻿namespace CrossCutting.Logging;
+﻿namespace CrossCutting.Contract.Logging;
 
 public interface ILogger
 {

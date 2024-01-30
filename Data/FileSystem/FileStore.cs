@@ -1,4 +1,6 @@
-﻿namespace Data.FileSystem
+﻿using Data.Contract.FileSystem;
+
+namespace Data.FileSystem
 {
     public class FileStore : IFileStore
     {

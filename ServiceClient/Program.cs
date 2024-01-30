@@ -1,7 +1,11 @@
 using ConsoleClient.Logic;
 using CrossCutting.Configuration;
+using CrossCutting.Contract.Configuration;
+using Data.Contract.DataAccess;
+using Data.Contract.FileSystem;
 using Data.DataAccess;
 using Data.FileSystem;
+using Logic.Contract.PersonManagement;
 
 namespace ServiceClient
 {

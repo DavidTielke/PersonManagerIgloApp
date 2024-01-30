@@ -1,6 +1,8 @@
 ﻿using CrossCutting.Configuration;
+using CrossCutting.Contract.Configuration;
 using CrossCutting.DomainModel;
-using Data.DataAccess;
+using Data.Contract.DataAccess;
+using Logic.Contract.PersonManagement;
 
 namespace ConsoleClient.Logic
 {

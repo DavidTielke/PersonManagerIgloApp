@@ -1,6 +1,6 @@
 ﻿using CrossCutting.DomainModel;
 
-namespace Data.DataAccess;
+namespace Data.Contract.DataAccess;
 
 public interface IPersonRepository
 {

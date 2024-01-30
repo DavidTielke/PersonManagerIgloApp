@@ -1,6 +1,6 @@
 ﻿using CrossCutting.DomainModel;
 
-namespace ConsoleClient.Logic;
+namespace Logic.Contract.PersonManagement;
 
 public interface IPersonManager
 {

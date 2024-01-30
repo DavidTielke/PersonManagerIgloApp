@@ -1,5 +1,8 @@
 ﻿using CrossCutting.Configuration;
+using CrossCutting.Contract.Configuration;
 using CrossCutting.DomainModel;
+using Data.Contract.DataAccess;
+using Data.Contract.FileSystem;
 using Data.FileSystem;
 
 namespace Data.DataAccess

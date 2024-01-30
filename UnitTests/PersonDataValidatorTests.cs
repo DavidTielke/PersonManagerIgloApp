@@ -1,5 +1,5 @@
-using ConsoleClient.CrossCutting;
-using ConsoleClient.Data;
+using CrossCutting.DomainModel;
+using Data.DataAccess;
 using FluentAssertions;
 
 namespace UnitTests;
